@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.velmurugan.bottomnativation.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bottom_navigationview"
+            app:labelVisibilityMode="labeled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:itemBackground="@color/bgBottomNavigation"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:itemTextColor="@drawable/nav_item_color"
+            app:itemIconTint="@drawable/nav_item_color"
+            app:menu="@menu/navigation_menu"
+            android:layout_gravity="bottom">
+        </android.support.design.widget.BottomNavigationView>
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>
